@@ -1,0 +1,5 @@
+FUNCTION reverseString(string)
+    reversed = ""
+    FOR i FROM string.length - 1  to 0
+        APPEND ith element of string to reversed
+    RETURN reversed
