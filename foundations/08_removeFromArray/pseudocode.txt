@@ -1,0 +1,6 @@
+FUNCTION removeFromArray(arr, ...args)
+    SET result TO []
+    FOR i FROM 0 to arr.length - 1
+        IF arr[i] is not in args 
+            SET result += arr[i]
+    RETURN result
