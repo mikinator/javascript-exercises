@@ -1,0 +1,13 @@
+FUNCTION sumAll(num1, num2)
+
+    IF num1 < 0 || num2 < 0 || num1 IS NOT integer || num2 IS NOT integer
+        RETURN "ERROR"
+    IF num2 < num1
+       SET start = num2
+       SET end = num1
+    ELSE
+        SET start = num1
+        SET end = num2
+
+    termCount = end - start + 1
+    RETURN termCount x (start + end) / 2
